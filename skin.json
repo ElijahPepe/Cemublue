@@ -1,0 +1,53 @@
+{
+        "name": "Cemublue",
+        "author": [
+                "ElijahPepe"
+	],
+	"url": "https://wiki.cemu.info/",
+	"descriptionmsg": "cemublue-desc",
+	"namemsg": "skinname-cemublue",
+	"license-name": "GPL-2.0",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.32.0"
+	},
+	"ValidSkinNames": {
+		"cemublue": "Cemublue"
+	},
+	"MessagesDirs": {
+		"Cemublue": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.cemublue.styles": {
+			"position": "top",
+			"styles": {
+				"main.css": {
+					"media": "screen"
+				}
+			}
+		},
+		"skins.cemublue.icons": {
+			"position": "top",
+			"class": "ResourceLoaderImageModule",
+			"selector": "body.skin-cemublue #pt-notifications-{name} .mw-echo-notifications-badge:before",
+			"images": {
+				"alert": "icons/bell.svg",
+				"notice": "icons/tray.svg"
+			}
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Cemublue"
+	},
+	"AutoloadClasses": {
+		"SkinCemublue": "SkinCemublue.php",
+		"CemublueTemplate": "CemublueTemplate.php"
+	},
+	"Hooks": {
+		"OutputPageBeforeHTML": "SkinCemublue::injectMetaTags"
+	},
+	"manifest_version": 1
+}

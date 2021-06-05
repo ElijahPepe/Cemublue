@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": ["ElijahPepe"]
+	},
+	"skinname-cemublue": "Cemublue",
+	"cemublue-desc": "Cemu.info's web theme ported to MediaWiki",
+	"cemublue.css": "/* CSS placed here will affect users of the Cemublue skin */",
+	"cemublue.js": "/* Any JavaScript here will be loaded for users using the Cemublue skin */"
+}
