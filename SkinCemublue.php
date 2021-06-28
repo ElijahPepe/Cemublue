@@ -21,10 +21,8 @@ class SkinCemublue extends SkinTemplate {
 	const FA_CDN_URL = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/';
 	const JS_CDN_URL = 'https://cemu.info/js/';
 
-	public function setupSkinUserCss(OutputPage $out) {
+	public function initCSS(OutputPage $out) {
 		$this->output = $out;
-
-		parent::setupSkinUserCss($out);
 
 		$out->addStyle(SkinCemublue::CSS_CDN_URL . 'bootstrap.min.css');
 		$out->addStyle(SkinCemublue::FA_CDN_URL . 'font-awesome.min.css');
@@ -45,6 +43,7 @@ class SkinCemublue extends SkinTemplate {
 
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
+		$this->initCSS( $out );
 		$cdnURL = self::JS_CDN_URL . 'bootstrap.min.js';
 		$script = <<<EOS
 function defer(method) {
