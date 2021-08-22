@@ -26,7 +26,6 @@ class SkinCemublue extends SkinTemplate {
 
 		$out->addStyle(SkinCemublue::CSS_CDN_URL . 'bootstrap.min.css');
 		$out->addStyle(SkinCemublue::FA_CDN_URL . 'font-awesome.min.css');
-		$out->addStyle(SkinCemublue::CSS_CDN_URL . 'navbar-fixed-top.css');
 
 		$out->addModuleStyles([
 			'mediawiki.skinning.interface',
