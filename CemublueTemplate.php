@@ -94,12 +94,6 @@ class CemublueTemplate extends BaseTemplate {
 							$this->renderPortals( $this->data['sidebar'] );
 							?>
 						</ul>
-						<ul class="nav navbar-nav navbar-right hidden-xs">
-							<?php
-							$this->toolbox();
-							$this->personaltools();
-							?>
-						</ul>
 					</div>
 				</div>
 			</div>
@@ -212,6 +206,12 @@ class CemublueTemplate extends BaseTemplate {
 					</button>
 				</div>
 				<div class="collapse navbar-collapse" id="gw-toolbar">
+					<ul class="nav navbar-nav navbar-right hidden-xs">
+						<?php
+							$this->toolbox();
+							$this->personaltools();
+						?>
+					</ul>
 					<ul class="nav navbar-nav">
 					<?php
 						foreach ( $context_actions as $key => $tab ) {
@@ -228,7 +228,7 @@ class CemublueTemplate extends BaseTemplate {
 							echo $this->makeListItem( $key, $tab );
 						}
 					?><li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">more <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 					<?php
 						foreach ( $secondary_actions as $key => $tab ) {

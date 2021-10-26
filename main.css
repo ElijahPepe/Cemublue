@@ -2,6 +2,7 @@
 
 body {
     background-color: #FAFAFA;
+    padding-top: 0 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,6 +28,10 @@ nav#wiki-actions {
 
 nav li {
 	margin-bottom: 0;
+}
+
+.dropdown-menu > li > a {
+    color: #7b8a8b !important;
 }
 
 #f-list {
@@ -362,15 +367,15 @@ textarea {
     margin-top: -20px;
 }
 .navbar-grey {
-    background-color: #DFE7E8;
+    background-color: #2c3e50;
     border: none;
 }
 .navbar-grey ul.nav li.active {
-    background-color: #FAFAFA;
+    background-color: #1a242f;
 }
 .navbar-grey a:link,
 .navbar-grey a:visited {
-    color: #18bc9c;
+    color: #fff;
 }
 .navbar-grey .navbar-toggle {
     border-color: #18bc9c ;
