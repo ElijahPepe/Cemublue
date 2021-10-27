@@ -76,28 +76,19 @@ class CemublueTemplate extends BaseTemplate {
 		<?php	$this->msg( 'jumpto' ); ?>
 		<a href="#top">content</a>
 	</div>
-	<header>
-		<nav class="cemublue-navbar" role="navigation">
-			<div class="container">
-				<div class="row">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-					<div class="collapse navbar-collapse navbar-main-collapse">
-						<ul class="nav navbar-nav">
-							<?php
+	<div id="sidebar-wrapper">
+		<div class="collapse navbar-collapse navbar-main-collapse">
+			<ul class="sidebar nav navbar-nav">
+				<div id="p-logo" role="banner" style="width: 10em;height: 160px;margin-bottom: 1em;">
+					<a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page" style="background-position: center center;background-repeat: no-repeat;display: block;width: 10em;height: 160px;text-decoration: none;"></a>
+					<?php
 							$this->renderPortals( $this->data['sidebar'] );
-							?>
-						</ul>
-					</div>
+					?>
 				</div>
-			</div>
-		</nav>
+			</ul>
+		</div>
+	</div>
+	<header>
 		<?php $this->cactions(); ?>
 	</header>
 	<?php
