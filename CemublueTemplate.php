@@ -81,10 +81,10 @@ class CemublueTemplate extends BaseTemplate {
 			<ul class="sidebar nav navbar-nav">
 				<div id="p-logo" role="banner" style="width: 10em;height: 160px;margin-bottom: 1em;">
 					<a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page" style="background-position: center center;background-repeat: no-repeat;display: block;width: 10em;height: 160px;text-decoration: none;"></a>
-					<?php
-							$this->renderPortals( $this->data['sidebar'] );
-					?>
 				</div>
+				<?php
+						$this->renderPortals( $this->data['sidebar'] );
+				?>
 			</ul>
 		</div>
 	</div>

@@ -507,8 +507,18 @@ fieldset[disabled] .cemublue-navbar .btn-link:hover {
 .cemublue-navbar:after {
     clear: both;
 }
+#sidebar-wrapper {
+    margin-left: 0;
+    width: 15rem;
+    z-index: 999;
+    position: fixed;
+    background-color: #2c3e50;
+    top: 0px;
+}
 .sidebar {
     width: 15rem;
+    background-color: #2c3e50;
+    height: 100vh;
 }
 footer {
     background-color: #eee;
@@ -582,4 +592,79 @@ ul.three-icons li {
         float: left;
         width: 33%;
     }
+}
+@media screen {
+ .mw-parser-output a.external,
+ .link-https {
+  background-image:url(/resources/src/mediawiki.skinning/images/external-ltr.svg?59558);
+  background-position:center right;
+  background-repeat:no-repeat;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href^='mailto:'],
+ .link-mailto {
+  background-image:url(/resources/src/mediawiki.skinning/images/mail.svg?d3bb8);
+  background-position:center right;
+  background-repeat:no-repeat;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href^='ftp://'],
+ .link-ftp {
+  background-image:url(/resources/src/mediawiki.skinning/images/ftp-ltr.svg?c5643);
+  background-position:center right;
+  background-repeat:no-repeat;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href^='irc://'],
+ .mw-parser-output a.external[href^='ircs://'],
+ .link-irc {
+  background-image:url(/resources/src/mediawiki.skinning/images/chat-ltr.svg?0108a);
+  background-position:center right;
+  background-repeat:no-repeat;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href$='.ogg'],
+ .mw-parser-output a.external[href$='.OGG'],
+ .mw-parser-output a.external[href$='.mid'],
+ .mw-parser-output a.external[href$='.MID'],
+ .mw-parser-output a.external[href$='.midi'],
+ .mw-parser-output a.external[href$='.MIDI'],
+ .mw-parser-output a.external[href$='.mp3'],
+ .mw-parser-output a.external[href$='.MP3'],
+ .mw-parser-output a.external[href$='.wav'],
+ .mw-parser-output a.external[href$='.WAV'],
+ .mw-parser-output a.external[href$='.wma'],
+ .mw-parser-output a.external[href$='.WMA'],
+ .link-audio {
+  background-image:url(/resources/src/mediawiki.skinning/images/audio-ltr.svg?4c880);
+  background-position:center right;
+  background-repeat:no-repeat;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href$='.ogm'],
+ .mw-parser-output a.external[href$='.OGM'],
+ .mw-parser-output a.external[href$='.avi'],
+ .mw-parser-output a.external[href$='.AVI'],
+ .mw-parser-output a.external[href$='.mpeg'],
+ .mw-parser-output a.external[href$='.MPEG'],
+ .mw-parser-output a.external[href$='.mpg'],
+ .mw-parser-output a.external[href$='.MPG'],
+ .link-video {
+  background-image:url(/resources/src/mediawiki.skinning/images/video.svg?a3758);
+  background-position:center right;
+  background-repeat:no-repeat;
+  padding-right:13px
+ }
+ .mw-parser-output a.external[href$='.pdf'],
+ .mw-parser-output a.external[href$='.PDF'],
+ .mw-parser-output a.external[href*='.pdf#'],
+ .mw-parser-output a.external[href*='.PDF#'],
+ .mw-parser-output a.external[href*='.pdf?'],
+ .mw-parser-output a.external[href*='.PDF?'],
+ .link-document {
+  background-image:url(/resources/src/mediawiki.skinning/images/document-ltr.svg?0bf90);
+  background-position:center right;
+  background-repeat:no-repeat;
+  padding-right:13px
+ }
 }
