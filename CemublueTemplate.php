@@ -134,11 +134,6 @@ class CemublueTemplate extends BaseTemplate {
 					<?php echo $this->makeSearchInput( [ "id" => "searchInput", "class" => "form-control", "placeholder" => $this->getMsg( 'search' )->escaped() ] ); ?>
 					<div class="input-group-btn"><?php
 						echo $this->makeSearchButton(
-						"go",
-						[ "id" => "searchGoButton", "class" => "searchButton btn btn-default" ]
-					);
-
-					echo $this->makeSearchButton(
 						"fulltext",
 						[ "id" => "mw-searchButton", "class" => "searchButton btn btn-default" ]
 					);
@@ -177,7 +172,7 @@ class CemublueTemplate extends BaseTemplate {
 		?>
 
 		<nav class="navbar navbar-default navbar-stick" id="wiki-actions" role="navigation">
-			<div class="container"><div class="row">
+			<div class="wide-container container"><div class="row">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gw-toolbar">
 						<span class="sr-only">Toggle navigation</span>
@@ -194,13 +189,13 @@ class CemublueTemplate extends BaseTemplate {
 						?>
 					</ul>
 					<ul class="nav navbar-nav">
-					<li id="ca-nstab-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [Alt+Shift+z]" accesskey="z">Cemu</a></li>
+					<li id="ca-nstab-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [Alt+Shift+z]" accesskey="z">Cemu Wiki</a></li>
+					<li id="ca-nstab-help"><a href="/wiki/CEMU_Wiki:Contributing" title="The place to find out">Contributing</a></li>
 					<?php
 						foreach ( $context_actions as $key => $tab ) {
 							echo $this->makeListItem( $key, $tab );
 						}
 					?>
-					<li id="ca-nstab-help"><a href="/wiki/CEMU_Wiki:Contributing" title="The place to find out">Contributing</a></li>
 					</ul>
 					<?php
 						$this->searchBox();
