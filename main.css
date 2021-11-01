@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav#wiki-actions ul.nav li.new a:link {
-	color: #ba0000;
+	color: #ce4844;
 }
 
 nav#wiki-actions ul.nav li.new a:visited {
@@ -529,7 +529,7 @@ footer a:visited {
     border-bottom: 1px solid #c8c8c8;
 }
 footer a:hover {
-    border-bottom: 1px solid #61538D;
+    border-bottom: 1px solid #18bc9c;
     text-decoration: none;
 }
 footer .footerhead {
