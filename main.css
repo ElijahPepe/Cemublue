@@ -271,18 +271,6 @@ body.mw-special-Specialpages h2 {
 	margin-top: 1em;
 }
 
-/* higher contrast */
-.skin-cemublue .alert-warning {
-	color: #8B4513;
-}
-
-.skin-cemublue .alert-info {
-	color: #000080;
-}
-.skin-cemublue .alert-danger {
-	color: #8B0000;
-}
-
 .mw-jump-link:not(:focus) {
         display: block;
         position: absolute !important;
