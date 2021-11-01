@@ -507,6 +507,9 @@ fieldset[disabled] .cemublue-navbar .btn-link:hover {
 .cemublue-navbar:after {
     clear: both;
 }
+#ca-nstab-mainpage {
+    font-weight: 700;
+}
 #sidebar-wrapper {
     margin-left: 0;
     width: 16rem;

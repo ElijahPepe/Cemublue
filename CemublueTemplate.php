@@ -200,7 +200,7 @@ class CemublueTemplate extends BaseTemplate {
 							echo $this->makeListItem( $key, $tab );
 						}
 					?>
-					<li id="ca-nstab-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Contributing</a></li>
+					<li id="ca-nstab-help"><a href="/wiki/CEMU_Wiki:Contributing" title="The place to find out">Contributing</a></li>
 					</ul>
 					<?php
 						$this->searchBox();
