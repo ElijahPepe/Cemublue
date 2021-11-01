@@ -76,18 +76,6 @@ class CemublueTemplate extends BaseTemplate {
 		<?php	$this->msg( 'jumpto' ); ?>
 		<a href="#top">content</a>
 	</div>
-	<div id="sidebar-wrapper">
-		<div class="collapse navbar-collapse navbar-main-collapse">
-			<ul class="sidebar nav navbar-nav">
-				<div id="p-logo" role="banner" style="width: 10em;height: 160px;margin-bottom: 1em;">
-					<a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page" style="background-position: center center;background-repeat: no-repeat;display: block;width: 10em;height: 160px;text-decoration: none;"></a>
-				</div>
-				<?php
-						$this->renderPortals( $this->data['sidebar'] );
-				?>
-			</ul>
-		</div>
-	</div>
 	<header>
 		<?php $this->cactions(); ?>
 	</header>
@@ -110,6 +98,8 @@ class CemublueTemplate extends BaseTemplate {
 									if ($aLink === 'copyright') continue;
 									echo "<li id=\"{$aLink}>\">"; $this->html( $aLink ); echo '</li>';
 							} ?>
+							<li id="randompage>"><a href="/wiki/Special:Random" title="Load a random page [Alt+Shift+x]" accesskey="x">Random page</a></li>
+							<li id="recentchanges>"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [Alt+Shift+r]" accesskey="r">Recent changes</a></li>
 						</ul>
 					<?php endif; ?>
 				</div>
@@ -186,7 +176,7 @@ class CemublueTemplate extends BaseTemplate {
 		}
 		?>
 
-		<nav class="navbar navbar-grey navbar-stick" id="wiki-actions" role="navigation">
+		<nav class="navbar navbar-default navbar-stick" id="wiki-actions" role="navigation">
 			<div class="container"><div class="row">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gw-toolbar">
@@ -204,11 +194,13 @@ class CemublueTemplate extends BaseTemplate {
 						?>
 					</ul>
 					<ul class="nav navbar-nav">
+					<li id="ca-nstab-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [Alt+Shift+z]" accesskey="z">Cemu</a></li>
 					<?php
 						foreach ( $context_actions as $key => $tab ) {
 							echo $this->makeListItem( $key, $tab );
 						}
 					?>
+					<li id="ca-nstab-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Contributing</a></li>
 					</ul>
 					<?php
 						$this->searchBox();
