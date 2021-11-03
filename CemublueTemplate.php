@@ -131,7 +131,7 @@ class CemublueTemplate extends BaseTemplate {
 			<input type='hidden' name="title" value="<?php $this->text( 'searchtitle' ) ?>"/>
 
 				<div class="input-group">
-					<?php echo $this->makeSearchInput( [ "id" => "searchInput", "class" => "form-control", "placeholder" => $this->getMsg( 'search' )->escaped() ] ); ?>
+					<?php echo $this->makeSearchInput( [ "id" => "searchInput", "class" => "form-control", "placeholder" => "Search a game or page..." ] ); ?>
 					<div class="input-group-btn"><?php
 						echo $this->makeSearchButton(
 						"fulltext",
@@ -172,7 +172,14 @@ class CemublueTemplate extends BaseTemplate {
 		?>
 
 		<nav class="navbar navbar-default navbar-stick" id="wiki-actions" role="navigation">
-			<div class="wide-container container"><div class="row">
+			
+			<ul class="nav navbar-nav navbar-right hidden-xs">
+				<?php
+					$this->toolbox();
+					$this->personaltools();
+				?>
+			</ul>
+			<div class="container"><div class="row">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gw-toolbar">
 						<span class="sr-only">Toggle navigation</span>
@@ -182,12 +189,6 @@ class CemublueTemplate extends BaseTemplate {
 					</button>
 				</div>
 				<div class="collapse navbar-collapse" id="gw-toolbar">
-					<ul class="nav navbar-nav navbar-right hidden-xs">
-						<?php
-							$this->toolbox();
-							$this->personaltools();
-						?>
-					</ul>
 					<ul class="nav navbar-nav">
 					<li id="ca-nstab-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [Alt+Shift+z]" accesskey="z">Cemu Wiki</a></li>
 					<li id="ca-nstab-help"><a href="/wiki/CEMU_Wiki:Contributing" title="The place to find out">Contributing</a></li>
@@ -200,7 +201,7 @@ class CemublueTemplate extends BaseTemplate {
 					<?php
 						$this->searchBox();
 					?>
-					<ul class="nav navbar-nav navbar-right hidden-xs">
+					<ul class="nav navbar-nav">
 					<?php
 						foreach ( $primary_actions as $key => $tab ) {
 							echo $this->makeListItem( $key, $tab );
