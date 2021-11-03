@@ -14,6 +14,11 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 2000 !important;
 }
 
+.navbar-form .input-group,
+.navbar-default .navbar-form {
+	width: 400px;
+}
+
 nav#wiki-actions ul.nav li.new a:link {
 	color: #ce4844;
 }
