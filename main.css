@@ -14,9 +14,39 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 2000 !important;
 }
 
+#content {
+	margin-top: 10px;
+}
+
+#ca-nstab-mainpage > a {
+	padding-left: 2px !important;
+}
+
+#ca-nstab-help {
+	margin-right: 10px;
+}
+
+.infobox td,
+.infobox th {
+	padding: 5px;
+}
+
+.navbar-right {
+	margin-right: 0 !important;
+}
+
 .navbar-form .input-group,
 .navbar-default .navbar-form {
-	width: 400px;
+	width: 500px;
+}
+
+.navbar-form .input-group > .form-control {
+	width: 125% !important;
+}
+
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+	width: 12px !important;
 }
 
 nav#wiki-actions ul.nav li.new a:link {
