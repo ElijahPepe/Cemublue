@@ -41,16 +41,37 @@ div.jumbotron {
 
 .navbar-form .input-group,
 .navbar-default .navbar-form {
-	width: 500px;
+	width: 440px;
 }
 
 .navbar-form .input-group > .form-control {
-	width: 125% !important;
+	width: 110% !important;
 }
 
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .btn-group {
-	width: 12px !important;
+	width: inherit !important;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #wiki-actions .container {
+    width: 80%;
+  }
+  
+  .navbar-form .input-group,
+  .navbar-default .navbar-form {
+  	width: 120%;
+  }
+
+  .navbar-form .input-group > .form-control {
+  	width: 80% !important;
+    border-bottom-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+  }
+  
+  .input-group-btn {
+    display: none !important;
+  }
 }
 
 nav#wiki-actions ul.nav li.new a:link {
